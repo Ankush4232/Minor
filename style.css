@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    overflow-y: scroll; /* Enable vertical scrolling */
+      scroll-behavior: smooth; /* Smooth scrolling */
+    /* background-color: #e4f7ff; */
+    /* background-color: #aec6cfd9; */
+    background-image: linear-gradient(to top right, #e4f7ff, #ffffff);
+}
+
+/* Header Section */
+
+.nav {
+    z-index: 20;                                       /* it contain the nav bar top of all div */
+    position: sticky ;                           
+    top: -20px;                         
+    
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 93%;
+    height: 12%;
+    margin-left: 55px;
+    
+    background-image: linear-gradient(to top, #d7f2fd, #ffffff); 
+
+    box-shadow: 5px 10px 5px #c7c8c8;
+    border-radius: 4px;
+    
+    
+
+}
+
+
+
+
+#logo {
+    
+    width: 130px;
+    height: 110px;
+    padding-bottom: 0;
+}
+
+.tags {
+    display: flex;
+    gap: 2rem;
+   
+    
+    
+}
+.tag {
+    text-decoration: none;
+    color: #000000;
+    
+}
+
+.flag {
+    display: inline;
+    width: 38px;
+    height: 28px;
+}
+
+.loginDiv {
+    width: 150px;
+    display: flex;
+    justify-content: end;
+    gap: 16px;
+}
+.login {
+    width: 80px;
+    height: 35px;
+    color: blue;
+    
+    
+    border-radius: 4px;
+    border: 1px solid blue;
+    cursor: pointer;
+}
+
+.signUp {
+    width: 80px;
+    height: 35px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(0, 106, 255);
+    border: 1px solid rgba(0, 0, 0, 0.447);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login:hover{
+    color: #000000;
+    background-color: rgb(192, 208, 252);
+}
+.signUp:hover {
+    background-color: rgb(30, 0, 255);
+}
+
+/* Slider section */
+
+.slide{
+    position: relative;                                                                                                                     
+    overflow: hidden;                                                         
+    min-width: 100%;   
+    height: 620px;                                                       
+
+    display: flex;                                                               
+    background-image: linear-gradient(to top, #c7ecfb, #fee5e5ae);
+  
+}
+
+.post1 {
+   
+    
+    width: 85%;
+    height: 620px;
+    margin-left: 180PX;
+    
+}
+
+.content1 {
+    
+    position: absolute;
+    margin: 100px;
+    margin-top: 150px;
+    width: 700px;
+
+}
+.para11 {
+    
+    font-size: 3rem;
+    color: blue;
+    font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 520;
+
+}
+.para12 {
+    font-size: 2.5rem;
+    font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 520;
+    margin-bottom: 20px;
+
+}
+
+.key1 {
+    text-decoration: none;
+    color: #6a6b6b;
+    ;
+}
+
+.info1{
+    margin-top: 20px;
+    
+}
+.topic1 {
+    font-size: 1.1rem;
+    width: 190px;
+    height: 45px;
+    color: white;
+    background-color: rgb(0, 106, 255);
+    border: 2px solid black;
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
+.know1 {
+    width: 100px;
+    height: 45px;
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;
+    color: blue;
+    border-radius: 4px;
+    border: 3px solid blue;
+    margin-left: 15px;
+
+    cursor: pointer;
+}
+
+/* For THIRD image */
+.post3 {
+    width: 85%;
+    height: 620px;
+    margin-left: 220PX;
+    
+}
+
+/* For FOURTH image */
+.post4 {
+    width: 85%;
+    height: 680px;
+    margin-left: 380PX;
+    
+}
+.post5 {
+    width: 75%;
+    height: 620px;
+    margin-left: 600PX;
+    
+}
+
+.slider-container {                                                                 
+    /* border: 2px solid black; */
+    width: 93%;
+    height: 620px;
+
+    position: absolute;
+    overflow: hidden;
+
+    margin-top: 35px;
+    margin-left: 55px;
+    box-shadow: 5px 10px 5px rgb(180, 179, 179);
+    border-radius: 4px;
+    
+   
+   
+}
+
+.slider {                                                                          
+    display: flex;
+    transition-property: transform ;
+    transition-duration:  1s;
+    transition-timing-function: ease-in-out;
+
+}
+
+
+.slider-container .prev , .next{
+   position: absolute;
+    
+    width: 2.8rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: #d2caca;
+    color: rgb(0, 0, 0);
+
+    opacity: 75%;
+    cursor: pointer;
+    transform: translateY(-50px);
+    z-index: 1;
+    border: none;
+
+}
+
+.slider-container .next {
+    top: 50%;
+    right: 10px;
+    
+}
+
+.slider-container .prev {
+    left: 10px;
+    top: 50%;
+    
+   margin-bottom: 500px;
+    
+}
+
+.btnImg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+
+
+
+
+/* Search div */
+
+
+/* General styles for the background and padding */
+.searchDiv {
+    background-image: linear-gradient(to top, #e4f7ff, #ffffff);
+    /* background-color: #e4f7ff; Light cyan background */
+    margin-top: 674px;
+    padding-left: 3.65%;
+    padding-right: 3.5%;
+}
+
+
+
+/* Container for the content with border, shadow, etc. */
+.search-container {
+    display: flex;
+    align-items: center;
+    height: 62px;
+    background-color: #ffffff; /* White background */
+    border: 1px solid #44444420; /* White border */
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Styling for the "I'm here to" text */
+.intro-text {
+    margin-left: 2rem;
+    font-size: 1rem;
+    color: #000000;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+/* Styling for the options list */
+.options-list {
+    display: flex;
+    margin-left: 2rem;
+    gap: 1rem;
+}
+
+/* Individual option item styling */
+.option-item {
+    background-color: #f1f1f1; /* Light gray background */
+    border-radius: 12px;
+    font-size: 0.8rem; /* Smaller text size */
+    font-weight: 400;
+    padding: 0.5rem 1rem;
+    list-style: none;
+    
+}
+.option-item a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Styling for the footer text */
+.searchDiv .last-text {
+    display: flex;
+    justify-content: flex-end;
+    width: 35%;
+}
+
+.searchDiv .last-text ul {
+    font-size: 0.875rem;
+    color: #9e9e9e; /* Light gray color for footer text */
+    font-weight: 400;
+}
+
+.searchImg{
+    width: 20px;
+    height: auto;
+    margin-right: 20px;
+}
+
+
+
+
+a{
+    cursor: pointer;
+}
+
+
