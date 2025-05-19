@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #AEC6CF, #FDFD96);
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #6c757d;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .organization {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 80%;
+            max-width: 900px;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            flex-basis: 150px;
+            max-width: 150px;
+            height: auto;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        .content {
+            flex: 1;
+            margin-left: 20px;
+            text-align: left;
+        }
+
+        .content h2 {
+            margin: 0 0 10px;
+        }
+
+        .content p {
+            margin: 0 0 20px;
+            color: #333;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .action-button {
+            background-color: teal;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 0.9em;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .action-button:hover {
+            background-color: lightblue;
+            color: black;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Donate</h1>
+        <p>Choose an organization and make a difference today!</p>
+    </header>
+
+    <main>
+        <div class="organization">
+            <img src="image/3.jpg" alt="Wildlife SOS">
+            <div class="content">
+                <h2>Wildlife SOS</h2>
+                <p>Founded in 1995, Wildlife SOS works to rescue and rehabilitate animals in need...</p>
+                <div class="action-buttons">
+                    <a href="https://wildlifesos.org/donate/" class="action-button" target="_blank">Donate Now</a>
+                    <a href="https://wildlifesos.org/" class="action-button" target="_blank">Visit</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="organization">
+            <img src="image/2.png">
+            <div class="content">
+                <h2>World Wildlife Fund (WWF)</h2>
+                <p>WWF is one of the world's leading conservation organizations...</p>
+                <div class="action-buttons">
+                    <a href="https://www.worldwildlife.org/donate" class="action-button" target="_blank">Donate Now</a>
+                    <a href="https://www.worldwildlife.org/" class="action-button" target="_blank">Visit</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="organization">
+            <img src="image/1.jpg" alt="PETA">
+            <div class="content">
+                <h2>PETA</h2>
+                <p>People for the Ethical Treatment of Animals (PETA) is the largest animal rights organization...</p>
+                <div class="action-buttons">
+                    <a href="https://www.peta.org/donate/" class="action-button" target="_blank">Donate Now</a>
+                    <a href="https://www.peta.org/" class="action-button" target="_blank">Visit</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="organization">
+            <img src="image/4.webp" alt="International Fund for Animal Welfare">
+            <div class="content">
+                <h2>International Fund for Animal Welfare (IFAW)</h2>
+                <p>IFAW rescues and protects animals worldwide...</p>
+                <div class="action-buttons">
+                    <a href="https://www.ifaw.org/donate" class="action-button" target="_blank">Donate Now</a>
+                    <a href="https://www.ifaw.org/" class="action-button" target="_blank">Visit</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="organization">
+            <img src="image/5.jpg" alt="Born Free Foundation">
+            <div class="content">
+                <h2>Born Free Foundation</h2>
+                <p>The Born Free Foundation works to keep wildlife in the wild...</p>
+                <div class="action-buttons">
+                    <a href="https://www.bornfree.org.uk/donate" class="action-button" target="_blank">Donate Now</a>
+                    <a href="https://www.bornfree.org.uk/" class="action-button" target="_blank">Visit</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="organization">
+            <img src="image/6.jpg" alt="Sea Shepherd Conservation Society">
+            <div class="content">
+                <h2>Sea Shepherd Conservation Society</h2>
+                <p>Sea Shepherd is dedicated to protecting marine wildlife from threats...</p>
+                <div class="action-buttons">
+                    <a href="https://www.seashepherd.org/donate" class="action-button" target="_blank">Donate Now</a>
+                    <a href="https://www.seashepherd.org/" class="action-button" target="_blank">Visit</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
